@@ -17,3 +17,5 @@ sed -i 's/192.168.1.1/192.168.2.111/g' package/base-files/files/bin/config_gener
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' ./feeds/luci/collections/luci/Makefile
 
+# tweak config
+echo "TARGET_ROOTFS_TARGZ=y" >>.config
