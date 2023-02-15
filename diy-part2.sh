@@ -18,5 +18,5 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' ./feeds/luci/collections/luci/Makefile
 
 # tweak config
-echo "TARGET_ROOTFS_TARGZ=y
+echo "CONFIG_TARGET_ROOTFS_TARGZ=y
 CONFIG_PACKAGE_luci-app-alist=y" >>.config
