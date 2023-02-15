@@ -20,3 +20,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' ./feeds/luci/collections/lu
 # tweak config
 echo "CONFIG_TARGET_ROOTFS_TARGZ=y
 CONFIG_PACKAGE_luci-app-alist=y" >>.config
+sed -i '/alist/d' .config
